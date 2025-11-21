@@ -29,7 +29,7 @@ if "chat_session" not in st.session_state:
 # --- 3. YAN MENÜ (SIDEBAR) TASARIMI ---
 with st.sidebar:
     st.image("https://cdn-icons-png.flaticon.com/512/4712/4712009.png", width=100)
-    st.title("🎓 İbrahim Emre Hoca")
+    st.title("🎓 İbrahim Emre Şaşmaz Hoca")
     st.info("Sorunun fotoğrafını yükle, önce çözümü al, sonra anlamadığın yerleri sor.")
     
     # Dosya yükleyiciyi buraya aldık
@@ -97,3 +97,4 @@ else:
     # Görsel yoksa karşılama ekranı
 
     st.info("👈 Başlamak için sol menüden bir soru fotoğrafı yükle.")
+
