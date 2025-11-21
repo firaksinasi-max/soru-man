@@ -4,7 +4,7 @@ from PIL import Image
 
 # --- 1. AYARLAR ---
 st.set_page_config(
-    page_title="YKS/LGS Koçu",
+    page_title="SoruMan",
     page_icon="🎓",
     layout="wide"
 )
@@ -29,7 +29,7 @@ if "chat_session" not in st.session_state:
 # --- 3. YAN MENÜ (SIDEBAR) TASARIMI ---
 with st.sidebar:
     st.image("https://cdn-icons-png.flaticon.com/512/4712/4712009.png", width=100)
-    st.title("🎓 Dijital Koç")
+    st.title("🎓 İbrahim Emre Hoca")
     st.info("Sorunun fotoğrafını yükle, önce çözümü al, sonra anlamadığın yerleri sor.")
     
     # Dosya yükleyiciyi buraya aldık
@@ -43,7 +43,7 @@ with st.sidebar:
 
 # --- 4. ANA EKRAN VE SOHBET MANTIĞI ---
 
-st.header("🤖 YKS & LGS Çözüm Asistanı")
+st.header("🤖 YKS & LGS Soru Çözüm Asistanı")
 
 # Görsel yüklendiyse işlemleri başlat
 if uploaded_file:
@@ -95,4 +95,5 @@ if uploaded_file:
 
 else:
     # Görsel yoksa karşılama ekranı
+
     st.info("👈 Başlamak için sol menüden bir soru fotoğrafı yükle.")
